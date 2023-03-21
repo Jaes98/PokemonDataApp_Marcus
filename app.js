@@ -16,7 +16,7 @@ const mewtwo = {
   weight: 122,
   height: 200,
   generation: 1,
-  spilversion: "Pokémon Blue, Pokémon Red",
+  spilversion: "Pokémon Red and Blue",
   canEvolve: false,
   statsHP: 7,
   statsAttack: 7,
