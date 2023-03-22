@@ -28,34 +28,39 @@ const mewtwo = {
   statsSpecialDefence: 6,
   statsSpeed: 8,
 };
+
 addPokemon(mewtwo);
+
 }
 
 
 
 function addPokemon(pokemon) {
     const myHtml = /*html*/ `
-    <li>Name: ${pokemon.name}</li>
-    <li>Description: ${pokemon.description}</li>
-    <li>Ability: ${pokemon.ability}</li>
-    <img src="${pokemon.image}">
-    <img src="${pokemon.footprint}">
-    <li>DexIndex: ${pokemon.dexindex}</li>
-    <li>SubType: ${pokemon.subtype}</li>
-    <li>Weaknesses: ${pokemon.weaknesses}</li>
-    <li>Gender: ${pokemon.gender}</li>
-    <li>Weight: ${pokemon.weight}</li>
-    <li>Height: ${pokemon.height}</li>
-    <li>Generation: ${pokemon.generation}</li>
-    <li>Spil Version: ${pokemon.spilversion}</li>
-    <li>Can Evolve: ${pokemon.canEvolve}</li>
-    <li>Stat HP: ${pokemon.statsHP}</li>
-    <li>Stats Attack: ${pokemon.statsAttack}</li>
-    <li>Stats Defence: ${pokemon.statsDefence}</li>
-    <li>Stats Special Attack: ${pokemon.statsSpecialAttack}</li>
-    <li>Stats Special Defence: ${pokemon.statsSpecialDefence}</li>
-    <li>Stats Speed: ${pokemon.statsSpeed}</li>`;
-    document.querySelector("#pokemons").insertAdjacentHTML("beforeend", myHtml);
+    <tr>
+    <td>${pokemon.name}</td>
+    <td>${pokemon.description}</td>
+    <td>Ability: ${pokemon.ability}</td>
+    <td><img src="${pokemon.image}"></td>
+    <td><img src="${pokemon.footprint}"></td>
+    <td>${pokemon.dexindex}</td>
+    <td>${pokemon.type}</td>
+    <td>${pokemon.subtype}</td>
+    <td>${pokemon.weaknesses}</td>
+    <td>${pokemon.gender}</td>
+    <td>${pokemon.weight} kg</td>
+    <td>${pokemon.height} cm</td>
+    <td>${pokemon.generation}</td>
+    <td>${pokemon.spilversion}</td>
+    <td>${pokemon.canEvolve}</td>
+    <td>HP: ${pokemon.statsHP}</td>
+    <td>Attack: ${pokemon.statsAttack}</td>
+    <td>Defence: ${pokemon.statsDefence}</td>
+    <td>Special Attack: ${pokemon.statsSpecialAttack}</td>
+    <td>Special Defence: ${pokemon.statsSpecialDefence}</td>
+    <td>Speed: ${pokemon.statsSpeed}</td></tr>`
+    
+    document.querySelector("#pokemons1").insertAdjacentHTML("beforeend", myHtml);
 }
 
 
@@ -86,3 +91,24 @@ function addPokemon(pokemon) {
 // }
 
 // showPokemon(mewtwo);
+
+{/* <li>Name: ${pokemon.name}</li>
+    <li>Description: ${pokemon.description}</li>
+    <li>Ability: ${pokemon.ability}</li>
+    <img src="${pokemon.image}">
+    <img src="${pokemon.footprint}">
+    <li>DexIndex: ${pokemon.dexindex}</li>
+    <li>SubType: ${pokemon.subtype}</li>
+    <li>Weaknesses: ${pokemon.weaknesses}</li>
+    <li>Gender: ${pokemon.gender}</li>
+    <li>Weight: ${pokemon.weight}</li>
+    <li>Height: ${pokemon.height}</li>
+    <li>Generation: ${pokemon.generation}</li>
+    <li>Spil Version: ${pokemon.spilversion}</li>
+    <li>Can Evolve: ${pokemon.canEvolve}</li>
+    <li>Stat HP: ${pokemon.statsHP}</li>
+    <li>Stats Attack: ${pokemon.statsAttack}</li>
+    <li>Stats Defence: ${pokemon.statsDefence}</li>
+    <li>Stats Special Attack: ${pokemon.statsSpecialAttack}</li>
+    <li>Stats Special Defence: ${pokemon.statsSpecialDefence}</li>
+    <li>Stats Speed: ${pokemon.statsSpeed}</li>`; */}
