@@ -132,3 +132,33 @@ table td img {
 #pokemondetails button:focus {
   outline: none;
 }
+
+
+
+/* .modal-body {
+  padding: 2rem;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.modal-close {
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  color: #f44336;
+}
+
+.pokemon-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap:  */

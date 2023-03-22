@@ -95,52 +95,43 @@ function addPokemon(pokemon) {
     }
 }
 
-
-// function showPokemon(pokemon) {
-//   const myHTML = /*HTML*/ `
-//     <p>Name: <span> ${pokemon.name}</span></p>
-//     <p>Description: <span>${pokemon.description}</span></p>
-//     <p>Ability: <span>${pokemon.ability}</span></p>
-//     <p><span>${pokemon.image}</span></p>
-//     <p><span>${pokemon.footprint}</span></p>
-//     <p>DexIndex: <span>${pokemon.dexindex}</span></p>
-//     <p>SubType: <span>${pokemon.subtype}</span></p>
-//     <p>Weaknesses: <span>${pokemon.weaknesses}</span></p>
-//     <p>Gender: <span>${pokemon.gender}</span></p>
-//     <p>Weight: <span>${pokemon.weight}</span></p>
-//     <p>Height: <span>${pokemon.height}</span></p>
-//     <p>Generation: <span>${pokemon.generation}</span></p>
-//     <p>Spil Version: <span>${pokemon.spilversion}</span></p>
-//     <p>Can Evolve: <span>${pokemon.canEvolve}</span></p>
-//     <p>Stat HP: <span>${pokemon.statsHP}</span></p>
-//     <p>Stats Attack: <span>${pokemon.statsAttack}</span></p>
-//     <p>Stats Defence: <span>${pokemon.statsDefence}</span></p>
-//     <p>Stats Special Attack: <span>${pokemon.statsSpecialAttack}</span></p>
-//     <p>Stats Special Defence: <span>${pokemon.statsSpecialDefence}</span></p>
-//     <p>Stats Speed: <span>${pokemon.statsSpeed}</span></p>
-//     `;
-//   document.querySelector("#pokemons").insertAdjacentHTML("beforeend", myHTML);
-// }
-
-// showPokemon(mewtwo);
-
-{/* <li>Name: ${pokemon.name}</li>
-    <li>Description: ${pokemon.description}</li>
-    <li>Ability: ${pokemon.ability}</li>
-    <img src="${pokemon.image}">
-    <img src="${pokemon.footprint}">
-    <li>DexIndex: ${pokemon.dexindex}</li>
-    <li>SubType: ${pokemon.subtype}</li>
-    <li>Weaknesses: ${pokemon.weaknesses}</li>
-    <li>Gender: ${pokemon.gender}</li>
-    <li>Weight: ${pokemon.weight}</li>
-    <li>Height: ${pokemon.height}</li>
-    <li>Generation: ${pokemon.generation}</li>
-    <li>Spil Version: ${pokemon.spilversion}</li>
-    <li>Can Evolve: ${pokemon.canEvolve}</li>
-    <li>Stat HP: ${pokemon.statsHP}</li>
-    <li>Stats Attack: ${pokemon.statsAttack}</li>
-    <li>Stats Defence: ${pokemon.statsDefence}</li>
-    <li>Stats Special Attack: ${pokemon.statsSpecialAttack}</li>
-    <li>Stats Special Defence: ${pokemon.statsSpecialDefence}</li>
-    <li>Stats Speed: ${pokemon.statsSpeed}</li>`; */}
+const modalHtml = /*html*/ `
+  <div class="modal-header">
+    <h2>${pokemon.name}</h2>
+    <button class="modal-close">&times;</button>
+  </div>
+  <div class="modal-body">
+    <div class="pokemon-details">
+      <div class="pokemon-details-image">
+        <img src="${pokemon.image}">
+        <img src="${pokemon.footprint}">
+      </div>
+      <div class="pokemon-details-info">
+        <ul>
+          <li><strong>Description:</strong> ${pokemon.description}</li>
+          <li><strong>Type:</strong> ${pokemon.type}</li>
+          <li><strong>Subtype:</strong> ${pokemon.subtype}</li>
+          <li><strong>Generation:</strong> ${pokemon.generation}</li>
+          <li><strong>Ability:</strong> ${pokemon.ability}</li>
+          <li><strong>DexIndex:</strong> ${pokemon.dexindex}</li>
+          <li><strong>Weaknesses:</strong> ${pokemon.weaknesses}</li>
+          <li><strong>Gender:</strong> ${pokemon.gender}</li>
+          <li><strong>Weight:</strong> ${pokemon.weight} kg</li>
+          <li><strong>Height:</strong> ${pokemon.height} cm</li>
+          <li><strong>Spil Version:</strong> ${pokemon.spilversion}</li>
+          <li><strong>Can Evolve:</strong> ${pokemon.canEvolve}</li>
+          <li><strong>Stats HP:</strong> ${pokemon.statsHP}</li>
+          <li><strong>Stats Attack:</strong> ${pokemon.statsAttack}</li>
+          <li><strong>Stats Defence:</strong> ${pokemon.statsDefence}</li>
+          <li><strong>Stats Special Attack:</strong> ${pokemon.statsSpecialAttack}</li>
+          <li><strong>Stats Special Defence:</strong> ${pokemon.statsSpecialDefence}</li>
+          <li><strong>Stats Speed:</strong> ${pokemon.statsSpeed}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <form method="dialog">
+      <button type="submit" class="modal-close">Close</button>
+    </form>
+  </div>`; 
