@@ -1,5 +1,8 @@
 "use strict";
 
+window.addEventListener("load", initApp);
+
+function initApp() {
 const mewtwo = {
   name: "Mewtwo",
   description:
@@ -25,6 +28,10 @@ const mewtwo = {
   statsSpecialDefence: 6,
   statsSpeed: 8,
 };
+addPokemon(mewtwo);
+}
+
+
 
 function addPokemon(pokemon) {
     const myHtml = /*html*/ `
@@ -50,7 +57,6 @@ function addPokemon(pokemon) {
     <li>Stats Speed: ${pokemon.statsSpeed}</li>`;
     document.querySelector("#pokemons").insertAdjacentHTML("beforeend", myHtml);
 }
-addPokemon(mewtwo);
 
 
 // function showPokemon(pokemon) {
