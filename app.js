@@ -60,7 +60,39 @@ function addPokemon(pokemon) {
     <td>Special Defence: ${pokemon.statsSpecialDefence}</td>
     <td>Speed: ${pokemon.statsSpeed}</td></tr>`
     
-    document.querySelector("#pokemons1").insertAdjacentHTML("beforeend", myHtml);
+    document.querySelector("#pokemons").insertAdjacentHTML("beforeend", myHtml);
+    document.querySelector("#pokemons tbody:last-child").addEventListener("click", pokemonClicked);
+
+    function pokemonClicked() {
+    document.querySelector("#pokemondetails").showModal();
+      const modalHtml = /*html*/ `
+    <li>Name: ${pokemon.name}</li>
+    <li>Description: ${pokemon.description}</li>
+    <li>Ability: ${pokemon.ability}</li>
+    <img src="${pokemon.image}">
+    <img src="${pokemon.footprint}">
+    <li>DexIndex: ${pokemon.dexindex}</li>
+    <li>SubType: ${pokemon.subtype}</li>
+    <li>Weaknesses: ${pokemon.weaknesses}</li>
+    <li>Gender: ${pokemon.gender}</li>
+    <li>Weight: ${pokemon.weight}</li>
+    <li>Height: ${pokemon.height}</li>
+    <li>Generation: ${pokemon.generation}</li>
+    <li>Spil Version: ${pokemon.spilversion}</li>
+    <li>Can Evolve: ${pokemon.canEvolve}</li>
+    <li>Stat HP: ${pokemon.statsHP}</li>
+    <li>Stats Attack: ${pokemon.statsAttack}</li>
+    <li>Stats Defence: ${pokemon.statsDefence}</li>
+    <li>Stats Special Attack: ${pokemon.statsSpecialAttack}</li>
+    <li>Stats Special Defence: ${pokemon.statsSpecialDefence}</li>
+    <li>Stats Speed: ${pokemon.statsSpeed}</li>
+    <form method="dialog">
+		<button>Close</button>
+    </form>`;
+    document
+      .querySelector("#pokemondetails")
+      .insertAdjacentHTML("beforeend", modalHtml);
+    }
 }
 
 

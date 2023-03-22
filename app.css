@@ -2,7 +2,10 @@ h1 {
     font-family: 'Pokemon Solid', sans-serif;
     font-size: xx-large;
 }
-
+img {
+  max-width: 100%;
+  height: auto;
+}
 table {
   border-collapse: collapse;
   font-family: "Helvetica Neue", sans-serif;
@@ -70,4 +73,65 @@ tr:hover td {
 table td img {
   max-width: 100%;
   height: auto;
+}
+
+/* Styling for showModal popup */
+#pokemondetails {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px #00000080;
+  color: #000;
+  font-family: 'Pokemon', sans-serif;
+  font-size: 16px;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+#pokemondetails h2 {
+  border-bottom: 2px solid #000;
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+#pokemondetails img {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+}
+
+#pokemondetails li {
+  margin-bottom: 10px;
+}
+
+#pokemondetails form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#pokemondetails button {
+  background-color: #f44336;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Pokemon', sans-serif;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#pokemondetails button:hover {
+  background-color: #e53935;
+}
+
+#pokemondetails button:focus {
+  outline: none;
 }
