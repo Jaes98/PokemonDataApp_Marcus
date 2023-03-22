@@ -2,10 +2,6 @@ h1 {
     font-family: 'Pokemon Solid', sans-serif;
     font-size: xx-large;
 }
-img {
-  max-width: 100%;
-  height: auto;
-}
 table {
   border-collapse: collapse;
   font-family: "Helvetica Neue", sans-serif;
@@ -103,7 +99,8 @@ table td img {
 #pokemondetails img {
   display: block;
   margin: 10px auto;
-  max-width: 100%;
+  max-width: 20%;
+  max-height: 20%;
 }
 
 #pokemondetails li {
