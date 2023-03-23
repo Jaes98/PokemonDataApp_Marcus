@@ -99,8 +99,8 @@ table td img {
 #pokemondetails img {
   display: block;
   margin: 10px auto;
-  max-width: 20%;
-  max-height: 20%;
+  max-width: 40%;
+  max-height: 40%;
 }
 
 #pokemondetails li {
@@ -135,7 +135,7 @@ table td img {
 
 
 
-/* .modal-body {
+.modal-body {
   padding: 2rem;
 }
 
@@ -161,4 +161,4 @@ table td img {
 .pokemon-details {
   display: flex;
   flex-wrap: wrap;
-  gap:  */
+}
