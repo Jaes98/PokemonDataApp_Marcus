@@ -41,7 +41,7 @@ function addPokemon(pokemon) {
     document.querySelector("#pokemons").insertAdjacentHTML("beforeend", myHtml);
     document.querySelector("#pokemons tbody:last-child").addEventListener("click", pokemonClicked);
 
-    function pokemonClicked() {
+function pokemonClicked() {
     document.querySelector("#pokemondetails").showModal();
     document.querySelector("#pokemondetails").scrollTo({top: 0, behavior: `smooth`});
     const modalHtml = /*html*/ `
@@ -86,7 +86,7 @@ function addPokemon(pokemon) {
       
     document
       .querySelector("#pokemondetails")
-      .insertAdjacentHTML("beforeend", modalHtml);
+      .innerHTML = modalHtml;
     }
 }
 
