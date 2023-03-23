@@ -85,7 +85,7 @@ table td img {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 9999;
-  max-height: 70vh;
+  max-height: 60vh;
   overflow-y: auto;
 }
 
