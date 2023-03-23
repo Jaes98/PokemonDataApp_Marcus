@@ -76,11 +76,11 @@ function addPokemon(pokemon) {
         </ul>
       </div>
     </div>
-  </div>
-  <div class="modal-footer">
-    <form method="dialog">
-      <button type="submit" class="modal-close">Close</button>
-    </form>
+    <div class="modal-footer">
+            <form method="dialog">
+                <button type="submit" class="modal-close">Close</button>
+            </form>
+        </div>
   </div>`; 
       
     document
