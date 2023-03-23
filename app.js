@@ -43,6 +43,7 @@ function addPokemon(pokemon) {
 
     function pokemonClicked() {
     document.querySelector("#pokemondetails").showModal();
+    document.querySelector("#pokemondetails").scrollTo({top: 0, behavior: `smooth`});
     const modalHtml = /*html*/ `
   <div class="modal-header">
     <h2>${pokemon.name}</h2>
