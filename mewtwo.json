@@ -1,0 +1,24 @@
+{ "name": "Mewtwo",
+  "description":
+    "Its DNA is almost the same as Mew’s. However, its size and disposition are vastly different.",
+  "ability": "Pressure",
+  "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png",
+  "footprint":
+    "https://assets.pokemon.com/assets/cms2/img/trading-card-game/_downloads/bw11/bw11_wallpaper3_th-mewtwo.jpg",
+  "dexindex": 150,
+  "type": "Psychic",
+  "subtype": null,
+  "weaknesses": "Ghost, Dark, Bug",
+  "gender": "Unknown",
+  "weight": 122,
+  "height": 200,
+  "generation": 1,
+  "spilversion": "Pokémon Red and Blue",
+  "canEvolve": false,
+  "statsHP": 7,
+  "statsAttack": 7,
+  "statsDefence": 6,
+  "statsSpecialAttack": 10,
+  "statsSpecialDefence": 6,
+  "statsSpeed": 8
+}
