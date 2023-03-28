@@ -73,7 +73,7 @@ function pokemonClicked() {
     </div>
     <div class="modal-footer">
             <form method="dialog">
-                <button type="submit" class="modal-close">Close</button>
+                <button type="submit" class="modal-luk">Close</button>
             </form>
         </div>
   </div>`; 

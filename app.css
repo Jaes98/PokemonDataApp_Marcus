@@ -147,14 +147,14 @@ table td img {
   border-bottom: 1px solid #ddd;
 }
 
-.modal-close {
+.modal-luk {
   font-size: 2rem;
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
-.modal-close:hover {
+.modal-luk:hover {
   color: #f44336;
 }
 
