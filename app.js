@@ -3,8 +3,10 @@
 window.addEventListener("load", initApp);
 
 async function initApp() {
-const mewtwo = await getPokemon("https://raw.githubusercontent.com/Jaes98/PokemonDataApp_Marcus/main/mewtwo.json");
-addPokemon(mewtwo);
+const pokemons = await getPokemon(
+  "https://cederdorff.github.io/dat-js/05-data/pokemons.json"
+);
+pokemons.forEach(addPokemon);
 }
 
 async function getPokemon(url) {
@@ -24,11 +26,8 @@ function addPokemon(pokemon) {
     <td>${pokemon.dexindex}</td>
     <td>${pokemon.type}</td>
     <td>${pokemon.weaknesses}</td>
-    <td>${pokemon.gender}</td>
-    <td>${pokemon.weight} kg</td>
-    <td>${pokemon.height} cm</td>
-    <td>${pokemon.canEvolve}</td>
-    <td>HP: ${pokemon.statsHP}</td>`
+    <td>${pokemon.generation}</td>
+    <td>${pokemon.spilversion}</td>`
     
     document.querySelector("#pokemons").insertAdjacentHTML("beforeend", myHtml);
     document.querySelector("#pokemons tbody:last-child").addEventListener("click", pokemonClicked);

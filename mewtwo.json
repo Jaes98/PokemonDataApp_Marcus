@@ -4,7 +4,7 @@
   "ability": "Pressure",
   "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png",
   "footprint": "https://archives.bulbagarden.net/media/upload/2/2f/F0150.png",
-  "dexindex": 150,
+  "dexindex": "0150",
   "type": "Psychic",
   "subtype": "Genetic",
   "weaknesses": "Ghost, Dark, Bug",
