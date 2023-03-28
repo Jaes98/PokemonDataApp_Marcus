@@ -6,7 +6,10 @@ async function initApp() {
 const pokemons = await getPokemon(
   "https://cederdorff.github.io/dat-js/05-data/pokemons.json"
 );
-pokemons.forEach(addPokemon);
+for (const pokemans of pokemons) {
+  addPokemon(pokemans);
+}
+// pokemons.forEach(addPokemon);
 }
 
 async function getPokemon(url) {
