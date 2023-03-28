@@ -23,20 +23,12 @@ function addPokemon(pokemon) {
     <td><img src="${pokemon.footprint}"></td>
     <td>${pokemon.dexindex}</td>
     <td>${pokemon.type}</td>
-    <td>${pokemon.subtype}</td>
     <td>${pokemon.weaknesses}</td>
     <td>${pokemon.gender}</td>
     <td>${pokemon.weight} kg</td>
     <td>${pokemon.height} cm</td>
-    <td>${pokemon.generation}</td>
-    <td>${pokemon.spilversion}</td>
     <td>${pokemon.canEvolve}</td>
-    <td>HP: ${pokemon.statsHP}</td>
-    <td>Attack: ${pokemon.statsAttack}</td>
-    <td>Defence: ${pokemon.statsDefence}</td>
-    <td>Special Attack: ${pokemon.statsSpecialAttack}</td>
-    <td>Special Defence: ${pokemon.statsSpecialDefence}</td>
-    <td>Speed: ${pokemon.statsSpeed}</td></tr>`
+    <td>HP: ${pokemon.statsHP}</td>`
     
     document.querySelector("#pokemons").insertAdjacentHTML("beforeend", myHtml);
     document.querySelector("#pokemons tbody:last-child").addEventListener("click", pokemonClicked);
