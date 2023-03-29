@@ -58,7 +58,7 @@ function pokemonClicked() {
           <li><strong>DexIndex:</strong> ${pokemon.dexindex}</li>
           <li><strong>Weaknesses:</strong> ${pokemon.weaknesses}</li>
           <li><strong>Gender:</strong> ${pokemon.gender}</li>
-          <li><strong>Weight:</strong> ${pokemon.weight} kg</li>
+          <li><strong>Weight:</strong> ${pokemon.weight} grams</li>
           <li><strong>Height:</strong> ${pokemon.height} cm</li>
           <li><strong>Spil Version:</strong> ${pokemon.spilversion}</li>
           <li><strong>Can Evolve:</strong> ${pokemon.canEvolve}</li>
